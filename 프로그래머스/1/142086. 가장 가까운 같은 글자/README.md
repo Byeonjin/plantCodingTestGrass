@@ -79,3 +79,13 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+
+
+<hr>
+<h2>나의 풀이 메모</h2>
+
+- 방법: 나는 DP로 풀었는데... 다른 사람 풀이 보니 그냥 이중 for문으로도 해결 가능
+- 어려웠던 점: 알파벳 관련 dp문제는 항상 배열 사이즈에 신경을 써야함. "z".charCodeAt() - "a".charCodeAt()는 25를 리턴하지만 실제 알파뱃은 26개!!!!
+- 해결 방법: string의 character를 순회하면서, dp 배열에 마지막 위치를 저장하며 값이 있으면 dp 배열 내의 값을 값이 없다면 -1을 answer 배열에 저장
+- 다른 사람들의 해결 방식 중 신기했던 방식: 인덱스 기반의 dp 배열을 사용하는 것이 아닌 객체를 이용한 해싱 방식... 그러나 이 방식은 정말 빡빡한 시간 복잡도 컷에서는 문제가 있을 수 있음 [내가 작성한 관련 포스팅](https://velog.io/@quswlstkd88/%EC%A7%84%EC%A7%9C-Javascript%EC%9D%98-Set%EC%9D%B4-%EB%B9%A0%EB%A5%B8%EA%B0%80%EC%9A%94)
