@@ -80,4 +80,11 @@
 </ul>
 
 
+<hr>
+<h2>나의 풀이 메모</h2>
+
+- 방법: combination(조합) 문제
+- 어려웠던 점: 오랜만에 보니 다음 단계로 제귀를 타고 들어갈 때 선택하지 않은 다음 수를 선택하기 위해 재귀함수에 index를 넘겨주는데, 이게 잘못 되어서 조금 헤맸음.
+- 해결 방법: 지금 스택에서 push된 idx의 element 다음부터 다음 재귀 단계에서 순회하여 로직을 수행해야하기 때문에, argument의 idx+1가 아닌 for문의 i+1로 넘겨줘야한다.
+
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
