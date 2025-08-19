@@ -97,3 +97,8 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+<hr>
+<h2>나의 풀이 메모</h2>
+
+- 방법: 나는 이름을 key, 그리움 점수를 value로 하는 Map을 이용, 그런데 다른 풀이 보니까 indexOf 사용해서 풀이는 되더라... Object 사용한 풀이도 있었음.
