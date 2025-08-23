@@ -75,3 +75,8 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+<hr>
+<h2>나의 풀이 메모</h2>
+
+- 방법: 그냥 for문과 while문 이용해서 풀이 / 다른 사람들 풀이 보니까 a~z를 모두 포함하는 문자열에서 skip 문자열과 정규식으로 match하여 풀이하는 게 있었는데, 신기했음.
