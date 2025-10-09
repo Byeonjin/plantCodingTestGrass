@@ -1,24 +1,16 @@
-const solution = (progresses, speeds) => {
-    const answer = [];
-    const queue = [...progresses];
-    let headIdx = 0;
-    
-    while(headIdx < queue.length){
-        let cnt = 0;
-        
-        for(let i = headIdx; i < queue.length; i++){
-            queue[i] += speeds[i];
+function solution(progresses, speeds) {
+    let answer = [0];
+    let days = progresses.map((progress, index) => Math.ceil((100 - progress) / speeds[index]));
+    let maxDay = days[0];
+
+    for(let i = 0, j = 0; i< days.length; i++){
+        if(days[i] <= maxDay) {
+            answer[j] += 1;
+        } else {
+            maxDay = days[i];
+            answer[++j] = 1;
         }
-        
-        while(queue[headIdx] >= 100){
-            headIdx += 1;
-            cnt += 1;
-        }
-        
-        if(cnt > 0){
-            answer.push(cnt)
-        }
-    }    
-    
+    }
+
     return answer;
 }
